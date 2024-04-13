@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+start = "python main.py"
+sync = "pip freeze > requirements.txt"
+
+[packages]
+python-gitlab = "*"
+python-dotenv = "*"
+questionary = "*"
+python-dateutil = "*"
+gitpython = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3"
